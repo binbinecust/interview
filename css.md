@@ -65,11 +65,13 @@
 }`
 
 ## css hack
-`<!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->
+`
+<!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->
 <!--[if IE]> 所有的IE可识别 <![endif]-->
 <!--[if IE 8]> 仅IE6可识别 <![endif]-->
 <!--[if lt IE 8]> IE8以下版本可识别 <![endif]-->
-<!--[if gte IE 8]> IE8以及IE8以上版本可识别 <![endif]-->`
+<!--[if gte IE 8]> IE8以及IE8以上版本可识别 <![endif]-->
+`
 
 ## 布局
 定宽加自适应
@@ -83,17 +85,25 @@
 flex布局
 
 ## top和translate来移动的区别
-top是cpu通过计算来进行渲染的；translate是GPU计算渲染的，CPU可以同时做其他的一些计算；所以translate的性能优于top
+top是cpu通过计算来进行渲染的，translate是GPU计算渲染的；
+
+CPU可以同时做其他的一些计算；所以translate的性能优于top
 
 ## animation
 animation-name 动画名称
+
 animation-duration 动画时间
+
 animation-timing-function 速度曲线，开始结束的方式
+
 animation-delay 开始播放前的延迟时间
+
 animation-iteration-count 播放次数
+
 animation-direction 是否反向播放
 
-`#id {
+`
+#id {
   animation: mymove 10s infinite;
 }
 
@@ -104,12 +114,18 @@ animation-direction 是否反向播放
   to {
     left: 200px;
   }
-}`
+}
+`
 
 ## translate transform transition区别
 translate: 移动，transform的一个方法
+
 用法 transform: translate(10px, 20px);
+
 transform: 变形
+
 transform: skew()/scale()/translate()
+
 transition: 允许css属性值在一定时间区间内平滑过渡
+
 transition: property duration timing-function delay;
