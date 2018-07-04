@@ -1,5 +1,5 @@
 ## 清除浮动
-`
+```
 .parent:after {
   clear: both;
   display: block;
@@ -9,7 +9,7 @@
 .parent {
   *zoom: 1;
 }
-`
+```
 
 ## 关于居中
 * 定宽
@@ -72,12 +72,12 @@
 }`
 
 ## css hack
-`
+```
 <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->
 <!--[if IE]> 所有的IE可识别 <![endif]-->
 <!--[if IE 8]> 仅IE6可识别 <![endif]-->
 <!--[if lt IE 8]> IE8以下版本可识别 <![endif]-->
-<!--[if gte IE 8]> IE8以及IE8以上版本可识别 <![endif]-->`
+<!--[if gte IE 8]> IE8以及IE8以上版本可识别 <![endif]-->```
 
 ## 布局
 定宽加自适应
@@ -109,7 +109,7 @@ animation-iteration-count 播放次数
 
 animation-direction 是否反向播放
 
-`#id {
+```#id {
   animation: mymove 10s infinite;
 }
 
@@ -120,7 +120,7 @@ animation-direction 是否反向播放
   to {
     left: 200px;
   }
-}`
+}```
 
 ## translate transform transition区别
 translate: 移动，transform的一个方法
