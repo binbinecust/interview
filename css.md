@@ -1,5 +1,6 @@
 ## 清除浮动
-`.parent:after {
+`
+.parent:after {
   clear: both;
   display: block;
   content: '',
@@ -7,15 +8,18 @@
 
 .parent {
   *zoom: 1;
-}`
+}
+`
 
 ## 关于居中
 * 定宽
+
 `{
   margin: 0 auto;
 }`
 
 * 不定宽 水平垂直居中
+
 `{
   position: absloute;
   top: 50%;
@@ -33,6 +37,7 @@
 }`
 
 * flex布局 >ie10
+
 `.parent {
   display: flex;
   justify-content: center;
@@ -40,6 +45,7 @@
 }`
 
 * 水平居中
+
 `.parent {
   text-align: center;
 }
@@ -54,6 +60,7 @@
 }
 `
 * 绝对定位，定宽高的
+
 `{
     width:100px;
     height:100px;
@@ -65,16 +72,16 @@
 }`
 
 ## css hack
-`
+
 <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->
 <!--[if IE]> 所有的IE可识别 <![endif]-->
 <!--[if IE 8]> 仅IE6可识别 <![endif]-->
 <!--[if lt IE 8]> IE8以下版本可识别 <![endif]-->
 <!--[if gte IE 8]> IE8以及IE8以上版本可识别 <![endif]-->
-`
 
 ## 布局
 定宽加自适应
+
 `.left {
   width: 200px;
 }
